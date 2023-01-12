@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>HS | Dashboard</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" type="image/x-icon" href="../Login_Register/img/LOGOHS.png">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+    <!-- cdn feedback -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <!-- last feedback -->
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- tambahan baru -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css1/style.css">
+
+    <!-- =======================================================
+  * Template Name: Gp - v4.10.0
+  * Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+    <div class="wrapper d-flex align-items-stretch">
+        <nav id="sidebar" class="active">
+            <div class="custom-menu">
+                <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                    <i class="fa fa-bars"></i>
+                    <span class="sr-only">Toggle Menu</span>
+                </button>
+            </div>
+            <div class="p-4">
+                <h2 class="logo me-auto me-lg-0"><a href="index.html">HS<span>.</span></h2>
+                <ul class="list-unstyled components mb-5">
+                    <li class="active">
+                        <a href="#"><span class="fa fa-home mr-3"></span> Home</a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="fa fa-user mr-3"></span> About</a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="fa fa-briefcase mr-3"></span> Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="fa fa-sticky-note mr-3"></span> Blog</a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="fa fa-paper-plane mr-3"></span> Contact</a>
+                    </li>
+                    <li>
+                        <a href="../Login_Register/index-login.html"><span class="fa fa-sign-out mr-3"></span> Log
+                            Out</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content" class="p-4 p-md-5 pt-5">
+            <!DOCTYPE html>
+            <html lang="en">
+
+            <head>
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                <title>Bootstrap User Management Data Table</title>
+                <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+                <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+                <link rel="stylesheet"
+                    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+                <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+                <style>
+                    body {
+                        color: #566787;
+                        background: #f5f5f5;
+                        font-family: 'Varela Round', sans-serif;
+                        font-size: 13px;
+                    }
+
+                    @media(max-width) {}
+
+                    .table-responsive {
+                        margin: 30px 0;
+                    }
+
+                    .table-wrapper {
+                        min-width: 1000px;
+                        background: #fff;
+                        padding: 20px 25px;
+                        border-radius: 3px;
+                        box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+                    }
+
+                    .table-title {
+                        padding-bottom: 15px;
+                        background: orange;
+                        color: #fff;
+                        padding: 16px 30px;
+                        margin: -20px -25px 10px;
+                        border-radius: 3px 3px 0 0;
+                    }
+
+                    .table-title h2 {
+                        margin: 5px 0 0;
+                        font-size: 24px;
+                    }
+
+                    .table-title .btn {
+                        color: #566787;
+                        float: right;
+                        font-size: 13px;
+                        background: #fff;
+                        border: none;
+                        min-width: 50px;
+                        border-radius: 2px;
+                        border: none;
+                        outline: none !important;
+                        margin-left: 10px;
+                    }
+
+                    .table-title .btn:hover,
+                    .table-title .btn:focus {
+                        color: #566787;
+                        background: #f2f2f2;
+                    }
+
+                    .table-title .btn i {
+                        float: left;
+                        font-size: 21px;
+                        margin-right: 5px;
+                    }
+
+                    .table-title .btn span {
+                        float: left;
+                        margin-top: 2px;
+                    }
+
+                    table.table tr th,
+                    table.table tr td {
+                        border-color: #e9e9e9;
+                        padding: 12px 15px;
+                        vertical-align: middle;
+                    }
+
+                    table.table tr th:first-child {
+                        width: 60px;
+                    }
+
+                    table.table tr th:last-child {
+                        width: 100px;
+                    }
+
+                    table.table-striped tbody tr:nth-of-type(odd) {
+                        background-color: #fcfcfc;
+                    }
+
+                    table.table-striped.table-hover tbody tr:hover {
+                        background: #f5f5f5;
+                    }
+
+                    table.table th i {
+                        font-size: 13px;
+                        margin: 0 5px;
+                        cursor: pointer;
+                    }
+
+                    table.table td:last-child i {
+                        opacity: 0.9;
+                        font-size: 22px;
+                        margin: 0 5px;
+                    }
+
+                    table.table td a {
+                        font-weight: bold;
+                        color: #566787;
+                        display: inline-block;
+                        text-decoration: none;
+                    }
+
+                    table.table td a:hover {
+                        color: #2196F3;
+                    }
+
+                    table.table td a.settings {
+                        color: #2196F3;
+                    }
+
+                    table.table td a.delete {
+                        color: #F44336;
+                    }
+
+                    table.table td i {
+                        font-size: 19px;
+                    }
+
+                    table.table .avatar {
+                        border-radius: 50%;
+                        vertical-align: middle;
+                        margin-right: 10px;
+                    }
+
+                    .status {
+                        font-size: 30px;
+                        margin: 2px 2px 0 0;
+                        display: inline-block;
+                        vertical-align: middle;
+                        line-height: 10px;
+                    }
+
+                    .text-success {
+                        color: #10c469;
+                    }
+
+                    .text-info {
+                        color: #62c9e8;
+                    }
+
+                    .text-warning {
+                        color: #FFC107;
+                    }
+
+                    .text-danger {
+                        color: #ff5b5b;
+                    }
+
+                    .pagination {
+                        float: right;
+                        margin: 0 0 5px;
+                    }
+
+                    .pagination li a {
+                        border: none;
+                        font-size: 13px;
+                        min-width: 30px;
+                        min-height: 30px;
+                        color: #999;
+                        margin: 0 2px;
+                        line-height: 30px;
+                        border-radius: 2px !important;
+                        text-align: center;
+                        padding: 0 6px;
+                    }
+
+                    .pagination li a:hover {
+                        color: #666;
+                    }
+
+                    .pagination li.active a,
+                    .pagination li.active a.page-link {
+                        background: #03A9F4;
+                    }
+
+                    .pagination li.active a:hover {
+                        background: #0397d6;
+                    }
+
+                    .pagination li.disabled i {
+                        color: #ccc;
+                    }
+
+                    .pagination li i {
+                        font-size: 16px;
+                        padding-top: 6px
+                    }
+
+                    .hint-text {
+                        float: left;
+                        margin-top: 10px;
+                        font-size: 13px;
+                    }
+                </style>
+                <script>
+                    $(document).ready(function () {
+                        $('[data-toggle="tooltip"]').tooltip();
+                    });
+                </script>
+            </head>
+
+            <body>
+                <div class="container-xl">
+                    <div class="table-responsive">
+                        <div class="table-wrapper">
+                            <div class="table-title">
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <h2> <b>Customer Service</b></h2>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <!-- <a href="#" class="btn btn-secondary rounded-1"><i
+                                                class="material-icons">&#xE147;</i> <span>Add New
+                                                User</span></a> -->
+                                        <a href="#" class="btn btn-secondary rounded-1"><i
+                                                class="material-icons">&#xE24D;</i> <span>Export
+                                                to
+                                                Excel</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            Accordion Item #1
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <!-- card -->
+                                        <div class="row">
+                                            <div class="col-12 mb-2 mt-2 ms-2">
+                                                <div class="card w-50 ">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Special title treatment</h5>
+                                                        <p class="card-text">With supporting text below as a natural
+                                                            lead-in to
+                                                            additional content.</p>
+                                                        <a href="#" class="btn btn-primary">Accept</a>
+                                                        <a href="#" class="btn btn-primary">Unnaccept</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 mb-2 ms-2">
+                                                <div class="card w-50">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Special title treatment</h5>
+                                                        <p class="card-text">With supporting text below as a natural
+                                                            lead-in to
+                                                            additional content.</p>
+                                                        <!-- modal -->
+                                                        <!-- Button trigger modal -->
+                                                        <button type="button" class="btn btn-primary"
+                                                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                            Send A Job's
+                                                        </button>
+
+                                                        <!-- Modal -->
+                                                        <div class="modal fade" id="exampleModal" tabindex="-1"
+                                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <h5 class="modal-title" id="exampleModalLabel">
+                                                                            Modal title
+                                                                        </h5>
+                                                                        <button type="button" class="btn-close"
+                                                                            data-bs-dismiss="modal"
+                                                                            aria-label="Close"></button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        ...
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-secondary"
+                                                                            data-bs-dismiss="modal">Close</button>
+                                                                        <button type="button"
+                                                                            class="btn btn-primary">Save
+                                                                            changes</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- last modal -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 mb-2 ms-2">
+                                                <div class="card w-50 ">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Report Detail </h5>
+                                                        <p class="card-text">With supporting text below as a natural
+                                                            lead-in to
+                                                            additional content.</p>
+                                                        <!-- modal 1 -->
+                                                        <!-- Button trigger modal -->
+                                                        <button type="button" class="btn btn-primary"
+                                                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                            Send A Job's
+                                                        </button>
+
+                                                        <!-- Modal -->
+                                                        <div class="modal fade" id="exampleModal" tabindex="-1"
+                                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <h5 class="modal-title" id="exampleModalLabel">
+                                                                            Modal title
+                                                                        </h5>
+                                                                        <button type="button" class="btn-close"
+                                                                            data-bs-dismiss="modal"
+                                                                            aria-label="Close"></button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        ...
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-secondary"
+                                                                            data-bs-dismiss="modal">Close</button>
+                                                                        <button type="button"
+                                                                            class="btn btn-primary">Save
+                                                                            changes</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- last card -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- lasst accordion -->
+                        </div>
+                    </div>
+                </div>
+            </body>
+
+            </html>
+        </div>
+
+    </div>
+    </div>
+    </div>
+
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <script src="assets/js1/jquery.min.js"></script>
+    <script src="assets/js1/popper.js"></script>
+    <script src="assets/js1/bootstrap.min.js"></script>
+    <script src="assets/js1/main.js"></script>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
